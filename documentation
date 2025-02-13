@@ -1,0 +1,14 @@
+Navbar:
+
+  - The navbar has hardoced values: 
+        * Work Experience
+        * Projects
+        * Education
+  - Non hardcoded values:
+        * Linkedin url
+        * Github url
+        * Skool url
+    The svgs are hardocded, you must have linkedin github and skool
+
+
+    

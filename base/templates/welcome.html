@@ -29,20 +29,38 @@
     
             </div>
         </nav>
+        <!-- <a href="" class="nav-link">Work Experience</a>
+        <a href="" class="nav-link">Projects</a>
+        <a href="" class="nav-link">Education</a> -->
+
 
         <nav class="navbar navbar-dark bg-dark joystick-nav">
             <div class="joystick-container mx-auto mx-auto_offset-10">
               <!-- Top button (e.g. "1") -->
-              <a href="#" class="joystick-button top-btn"><img src="{% static 'svgs/work_experience.svg' %}" alt="Skool" width="35" height="35" class="d-inline-block align-text-top"></a>
-          
+              <a href="#" class="joystick-button top-btn">
+                <img src="{% static 'svgs/work_experience.svg' %}" alt="Work Experience" width="35" height="35" class="d-inline-block align-text-top">
+                <span class="button-label">Experience</span>
+            </a>
+                
               <!-- Left button (e.g. "2") -->
-              <a href="#" class="joystick-button left-btn">2</a>
+              <a href="#" class="joystick-button left-btn">
+                
+                <img src="{% static 'svgs/home.svg' %}" alt="Home" width="35" height="35" class="d-inline-block align-text-top">
+                <span class="button-label">Home</span>
+            </a>
           
               <!-- Right button (e.g. "3") -->
-              <a href="#" class="joystick-button right-btn">3</a>
+              <a href="#" class="joystick-button right-btn">
+                <img src="{% static 'svgs/education.svg' %}" alt="Education" width="35" height="35" class="d-inline-block align-text-top">
+                <span class="button-label">Education</span>
+            </a>
           
               <!-- Bottom button (e.g. "4") -->
-              <a href="#" class="joystick-button bottom-btn">4</a>
+              <a href="#" class="joystick-button bottom-btn">
+                <img src="{% static 'svgs/projects.svg' %}" alt="Projects" width="35" height="35" class="d-inline-block align-text-top">
+                <span class="button-label">Projects</span>
+            </a>
+        
             </div>
           </nav>
           
@@ -106,6 +124,26 @@ Donec gravida euismod ex, a tincidunt dui commodo non. Donec eu ante scelerisque
        </body>
 
 
+<script>
 
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('.joystick-nav');
+    const navTop = nav.offsetTop;
+    const buttons = document.querySelectorAll('.joystick-button');
+
+    function fixedNav() {
+        if (window.scrollY >= navTop) {
+            nav.classList.add('sticky');
+            buttons.forEach(button => {
+                button.style.transition = 'all 0.3s ease-in-out';
+            });
+        } else {
+            nav.classList.remove('sticky');
+        }
+    }
+
+    window.addEventListener('scroll', fixedNav);
+});
+</script>
     
 </html>

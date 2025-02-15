@@ -1,14 +1,17 @@
 Navbar:
 
-  - The navbar has hardoced values: 
-        * Work Experience
-        * Projects
-        * Education
-  - Non hardcoded values:
+2 navbars:
+1. Social media links, svgs of the websites, is not sticky
+
+2. A joystick navigaiton layout sticky navbar. Changes to a normal horizontal one when scrolled down.
+ There are images that are svgs, they're improted from assets/svgs. Representing each category the user wants to navigate to. For further cleareance when hovering over an svg text appears indicating what it is.
+ 
+
+  - Non hardcoded values (There is a built in model called "Link", this is for future changes in links :D):
         * Linkedin url
         * Github url
         * Skool url
-    The svgs are hardocded, you must have linkedin github and skool
+    The svgs are imported from assets/svgs
 
 
     

@@ -1,3 +1,80 @@
 .navbar.bg-dark {
-    background-color: #000000 !important;
+    background-color: black !important;
 }
+
+.mx-auto_offset-10 {
+    /* Keep mx-auto’s horizontal centering, then move right by 10px */
+    transform: translateX(-15px);
+  }
+  /* Hide the hamburger icon (if not needed) */
+  .joystick-nav .navbar-toggler {
+    display: none;
+  }
+  
+  /* Make the container smaller so buttons are closer */
+  .joystick-container {
+    position: relative;
+    width: 120px; /* Reduced from 200px */
+    height: 120px;
+  }
+  
+  /* Common button styles, also made a bit smaller */
+  .joystick-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;   /* Reduced from 45px */
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Slightly smaller font */
+    transition: background-color 0.2s;
+  }
+  
+  /* Top button => center horizontally */
+  .top-btn {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: green;
+  }
+  .top-btn:hover {
+    background-color: #32cd32;
+  }
+  
+  /* Left button => left side, centered vertically */
+  .left-btn {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFD580; /* light orange */
+  }
+  .left-btn:hover {
+    background-color: #FFC04D;
+  }
+  
+  /* Right button => right side, centered vertically */
+  .right-btn {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+  }
+  .right-btn:hover {
+    background-color: #ff4040;
+  }
+  
+  /* Bottom button => center horizontally at the bottom */
+  .bottom-btn {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blue;
+  }
+  .bottom-btn:hover {
+    background-color: #4169e1;
+  }
+  
